@@ -127,7 +127,7 @@ Phone: [+91 99133 92008](tel:+919913392008)
 </p>
 
 <p align="center">
-  **Experience Lusso Cafe — A Taste of Luxury**
+  <b>Experience Lusso Cafe — A Taste of Luxury</b>
   <br>
   Explore our elegant website, discover the menu, browse our gallery, and reserve your table.
   <br><br>
