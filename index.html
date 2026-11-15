@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf9f5">
+  <meta name="description" content="Lusso Cafe - thoughtfully crafted coffee, delicious food and beautiful moments.">
+  <title>Lusso Cafe | A Taste of Luxury</title>
+
+  <!-- Logo in browser tab (before title) -->
+  <link rel="icon" type="image/svg+xml" href="image/logo.svg">
+  <link rel="shortcut icon" href="image/logo.svg">
+  <link rel="apple-touch-icon" href="image/logo.svg">
+
+  <!-- Logo when link is shared (WhatsApp, Facebook etc.) -->
+  <meta property="og:title" content="Lusso Cafe | A Taste of Luxury">
+  <meta property="og:description" content="Thoughtfully crafted coffee, delicious food and beautiful moments.">
+  <meta property="og:image" content="image/logo.svg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-loader">
+    <div class="loader-logo"><img src="image/logo.svg" alt="Lusso Cafe logo"></div>
+    <h2>Lusso  <span>CAFE</span></h2>
+    <div class="loader-line"><span></span></div>
+    <small>YOUR LITTLE ESCAPE</small>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <header class="header" id="header">
+    <a href="#home" class="logo">
+      <span class="logo-symbol"><img src="image/logo.svg" alt="Lusso Cafe logo"></span>
+      <span class="logo-text">Lusso <small>CAFE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#experiences">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#booking" class="nav-book">Reserve a Table <span>↗</span></a>
+    </nav>
+  </header>
+  <main>
+  <section class="hero" id="home">
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow hero-eyebrow">WELCOME TO Lusso Cafe</span>
+        <h1>Good coffee.<br>Beautiful <em>moments.</em></h1>
+        <p>A little escape from the everyday. Discover thoughtfully crafted coffee, delicious bites and a space made for you.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-light">Explore Our Menu <span>↗</span></a>
+          <a href="#booking" class="btn btn-outline-light">Reserve Your Table</a>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>CRAFTED WITH CARE</span>
+        <span>SCROLL TO DISCOVER ↓</span>
+      </div>
+    </section>
+    <section class="intro-strip marquee" aria-label="Highlights">
+      <div class="marquee-track" data-marquee>
+        <span>FRESHLY BREWED</span><i>✦</i><span>THOUGHTFULLY PREPARED</span><i>✦</i><span>ALWAYS WELCOMING</span><i>✦</i><span>GOOD COFFEE</span><i>✦</i><span>GOOD COMPANY</span><i>✦</i>
+      </div>
+    </section>
+    <section class="section story-section" id="story">
+      <div class="story-visual reveal reveal-left">
+        <img src="image/story.jpg" alt="Coffee being prepared">
+        <div class="photo-tag">A MOMENT TO YOURSELF</div>
+      </div>
+      <div class="story-copy reveal reveal-right">
+        <span class="eyebrow">01 / OUR STORY</span>
+        <h2>More than coffee.<br><em>A feeling.</em></h2>
+        <p>At Lusso Cafe, we believe the best moments are often the simplest ones. A perfectly brewed coffee, a delicious bite, and conversations that last a little longer.</p>
+        <p>We bring together thoughtful ingredients, warm hospitality and a beautiful atmosphere to create a place you'll always want to return to.</p>
+        <a href="#experiences" class="text-link">Discover Our World <span>↗</span></a>
+      </div>
+    </section>
+    <section class="section menu-section" id="menu">
+      <div class="section-heading reveal">
+        <span class="eyebrow">02 / OUR MENU</span>
+        <h2>Made to be <em>savoured.</em></h2>
+        <p>Thoughtfully crafted favourites for every kind of craving.</p>
+      </div>
+      <div class="sub-title reveal"><span>BROWSE</span><h3>Shop by <em>category</em></h3></div>
+      <div class="category-grid">
+        <button class="flip-card reveal reveal-flip" style="--d:0s" data-jump="coffee" type="button">
+          <div class="flip-inner">
+            <div class="flip-front"><img src="image/cold_coffee.jpg" alt="Coffee"><div class="flip-label"><span>01</span><h4>Coffee</h4></div></div>
+            <div class="flip-back"><h4>Coffee</h4><p>Espresso, cappuccino, latte &amp; more, brewed fresh.</p><b>View items ↗</b></div>
+          </div>
+        </button>
+        <button class="flip-card reveal reveal-flip" style="--d:.08s" data-jump="drinks" type="button">
+          <div class="flip-inner">
+            <div class="flip-front"><img src="image/drinks.avif" alt="Drinks"><div class="flip-label"><span>02</span><h4>Drinks</h4></div></div>
+            <div class="flip-back"><h4>Drinks</h4><p>Cooling mojitos and fresh refreshers for any season.</p><b>View items ↗</b></div>
+          </div>
+        </button>
+        <button class="flip-card reveal reveal-flip" style="--d:.16s" data-jump="desserts" type="button">
+          <div class="flip-inner">
+            <div class="flip-front"><img src="image/dessert.jpg" alt="Desserts"><div class="flip-label"><span>03</span><h4>Desserts</h4></div></div>
+            <div class="flip-back"><h4>Desserts</h4><p>Cakes, pastries and little sweet treats.</p><b>View items ↗</b></div>
+          </div>
+        </button>
+        <button class="flip-card reveal reveal-flip" style="--d:.24s" data-jump="bites" type="button">
+          <div class="flip-inner">
+            <div class="flip-front"><img src="image/bites.jpg" alt="Bites"><div class="flip-label"><span>04</span><h4>Bites</h4></div></div>
+            <div class="flip-back"><h4>Bites</h4><p>Sandwiches, snacks and light plates to go with your cup.</p><b>View items ↗</b></div>
+          </div>
+        </button>
+      </div>
+      <div class="sub-title reveal"><span>CUSTOMER FAVOURITES</span><h3>Our <em>best sellers</em></h3></div>
+      <div class="slider reveal" id="bestSlider">
+        <div class="slider-viewport">
+          <div class="slider-track">
+            <article class="slide"><div class="slide-img"><img src="image/p1.jpg" alt="Classic cappuccino"><span class="rank">#1</span></div><div class="slide-info"><small>COFFEE</small><h4>Classic Cappuccino</h4><p>Rich espresso with silky steamed milk.</p><div class="slide-foot"><strong>₹180</strong><span class="stars-s">★★★★★</span></div></div></article>
+            <article class="slide"><div class="slide-img"><img src="image/p4.jpg" alt="Chocolate delight"><span class="rank">#2</span></div><div class="slide-info"><small>DESSERTS</small><h4>Chocolate Delight</h4><p>Decadent chocolate in every bite.</p><div class="slide-foot"><strong>₹220</strong><span class="stars-s">★★★★★</span></div></div></article>
+            <article class="slide"><div class="slide-img"><img src="image/p2.jpg" alt="Velvet latte"><span class="rank">#3</span></div><div class="slide-info"><small>COFFEE</small><h4>Velvet Latte</h4><p>Smooth, creamy and beautifully balanced.</p><div class="slide-foot"><strong>₹200</strong><span class="stars-s">★★★★★</span></div></div></article>
+            <article class="slide"><div class="slide-img"><img src="image/gardern_sandwich.png" alt="Club sandwich"><span class="rank">#4</span></div><div class="slide-info"><small>BITES</small><h4>Garden Club Sandwich</h4><p>Toasted, layered and full of fresh flavour.</p><div class="slide-foot"><strong>₹240</strong><span class="stars-s">★★★★★</span></div></div></article>
+            <article class="slide"><div class="slide-img"><img src="image/Honey Berry Waffle.jpg" alt="Summer berries mojito"><span class="rank">#5</span></div><div class="slide-info"><small>DRINKS</small><h4>Summer Berries Mojito</h4><p>A refreshing blend for sunny afternoons.</p><div class="slide-foot"><strong>₹160</strong><span class="stars-s">★★★★★</span></div></div></article>
+            <article class="slide"><div class="slide-img"><img src="image/cold_coffee.jpg" alt="Cold coffee"><span class="rank">#6</span></div><div class="slide-info"><small>COFFEE</small><h4>Iced Caramel Cold Coffee</h4><p>Chilled, creamy and just sweet enough.</p><div class="slide-foot"><strong>₹210</strong><span class="stars-s">★★★★★</span></div></div></article>
+          </div>
+        </div>
+        <button class="slider-btn prev" aria-label="Previous" type="button">←</button>
+        <button class="slider-btn next" aria-label="Next" type="button">→</button>
+        <div class="slider-dots"></div>
+      </div>
+      <div class="sub-title reveal"><span>THE FULL MENU</span><h3>Explore <em>everything</em></h3></div>
+      <div class="menu-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+        <button class="filter-btn" data-filter="bites">Bites</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card reveal" data-category="coffee"><div class="menu-image"><img src="image/p1.jpg" alt="Classic cappuccino"><span>BESTSELLER</span></div><div class="menu-info"><div class="menu-meta">01 / COFFEE</div><h3>Classic Cappuccino</h3><p>Rich espresso with silky steamed milk.</p><strong>₹180</strong></div></article>
+        <article class="menu-card reveal" data-category="coffee"><div class="menu-image"><img src="image/p2.jpg" alt="Velvet latte"></div><div class="menu-info"><div class="menu-meta">02 / COFFEE</div><h3>Velvet Latte</h3><p>Smooth, creamy and beautifully balanced.</p><strong>₹200</strong></div></article>
+        <article class="menu-card reveal" data-category="drinks"><div class="menu-image"><img src="image/p3.jpg" alt="Summer berries mojito"></div><div class="menu-info"><div class="menu-meta">03 / DRINKS</div><h3>Summer Berries Mojito</h3><p>A refreshing blend for sunny afternoons.</p><strong>₹160</strong></div></article>
+        <article class="menu-card reveal" data-category="desserts"><div class="menu-image"><img src="image/p4.jpg" alt="Chocolate cake"></div><div class="menu-info"><div class="menu-meta">04 / DESSERTS</div><h3>Chocolate Delight</h3><p>Decadent chocolate in every bite.</p><strong>₹220</strong></div></article>
+        <article class="menu-card reveal" data-category="desserts"><div class="menu-image"><img src="image/p5.jpg" alt="Sweet dessert"></div><div class="menu-info"><div class="menu-meta">05 / DESSERTS</div><h3>Sweet Moments</h3><p>A delicate treat for your sweet tooth.</p><strong>₹190</strong></div></article>
+        <article class="menu-card reveal" data-category="drinks"><div class="menu-image"><img src="image/p6.jpg" alt="Fresh drink"></div><div class="menu-info"><div class="menu-meta">06 / DRINKS</div><h3>Fresh Refreshment</h3><p>Fresh flavours, made to brighten your day.</p><strong>₹150</strong></div></article>
+        <article class="menu-card reveal" data-category="bites"><div class="menu-image"><img src="image/gardern_sandwich.png" alt="Club sandwich"><span>NEW</span></div><div class="menu-info"><div class="menu-meta">07 / BITES</div><h3>Garden Club Sandwich</h3><p>Toasted, layered and full of fresh flavour.</p><strong>₹240</strong></div></article>
+        <article class="menu-card reveal" data-category="coffee"><div class="menu-image"><img src="image/cold_coffee.jpg" alt="Iced caramel cold coffee"></div><div class="menu-info"><div class="menu-meta">08 / COFFEE</div><h3>Iced Caramel Cold Coffee</h3><p>Chilled, creamy and just sweet enough.</p><strong>₹210</strong></div></article>
+        <article class="menu-card reveal" data-category="bites"><div class="menu-image"><img src="image/chess_toast.jpg" alt="Cheesy garlic toast"></div><div class="menu-info"><div class="menu-meta">09 / BITES</div><h3>Cheesy Garlic Toast</h3><p>Golden, crisp and melty in the middle.</p><strong>₹170</strong></div></article>
+      </div>
+      <div class="sub-title reveal"><span>PEOPLE LOVE THESE</span><h3>Most <em>loved dishes</em></h3></div>
+      <div class="loved-grid">
+        <article class="loved-card reveal reveal-zoom" style="--d:0s">
+          <div class="loved-img"><img src="image/Classic Tiramisu.jpg" alt="Tiramisu"><button class="like-btn" data-id="tiramisu" data-base="1284" aria-label="Like" type="button"><span class="heart">♥</span></button></div>
+          <div class="loved-info"><h4>Classic Tiramisu</h4><div class="loved-people"><div class="avatars"><i>A</i><i>R</i><i>S</i><i>M</i></div><p><b class="like-count">1284</b> people love this</p></div></div>
+        </article>
+        <article class="loved-card reveal reveal-zoom" style="--d:.1s">
+          <div class="loved-img"><img src="image/Honey Berry Waffle.jpg" alt="Waffles"><button class="like-btn" data-id="waffle" data-base="986" aria-label="Like" type="button"><span class="heart">♥</span></button></div>
+          <div class="loved-info"><h4>Honey Berry Waffle</h4><div class="loved-people"><div class="avatars"><i>K</i><i>P</i><i>D</i><i>N</i></div><p><b class="like-count">986</b> people love this</p></div></div>
+        </article>
+        <article class="loved-card reveal reveal-zoom" style="--d:.2s">
+          <div class="loved-img"><img src="image/Creamy Pink Pasta.jpg" alt="Pasta"><button class="like-btn" data-id="pasta" data-base="872" aria-label="Like" type="button"><span class="heart">♥</span></button></div>
+          <div class="loved-info"><h4>Creamy Pink Pasta</h4><div class="loved-people"><div class="avatars"><i>J</i><i>V</i><i>T</i><i>H</i></div><p><b class="like-count">872</b> people love this</p></div></div>
+        </article>
+        <article class="loved-card reveal reveal-zoom" style="--d:.3s">
+          <div class="loved-img"><img src="image/Warm Walnut Brownie.jpg" alt="Brownie"><button class="like-btn" data-id="brownie" data-base="1103" aria-label="Like" type="button"><span class="heart">♥</span></button></div>
+          <div class="loved-info"><h4>Warm Walnut Brownie</h4><div class="loved-people"><div class="avatars"><i>L</i><i>G</i><i>B</i><i>F</i></div><p><b class="like-count">1103</b> people love this</p></div></div>
+        </article>
+      </div>
+      <p class="loved-hint reveal">Tap the heart to show some love ♥</p>
+    </section>
+    <section class="craft-section" id="craft">
+      <div class="craft-image reveal reveal-left">
+        <img src="image/p7.jpg" alt="Barista preparing coffee">
+      </div>
+      <div class="craft-copy reveal reveal-right">
+        <span class="eyebrow">03 / THE ART OF COFFEE</span>
+        <h2>Every detail<br>makes a <em>difference.</em></h2>
+        <p>From carefully selected beans to the final pour, we take pride in the little things that make every cup memorable.</p>
+        <div class="craft-points">
+          <div><span>01</span><p><strong>Quality Ingredients</strong><small>Thoughtfully selected for every creation.</small></p></div>
+          <div><span>02</span><p><strong>Skilled Hands</strong><small>Prepared with passion and precision.</small></p></div>
+          <div><span>03</span><p><strong>Beautiful Moments</strong><small>Served with genuine hospitality.</small></p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section experience-section" id="experiences">
+      <div class="section-heading reveal">
+        <span class="eyebrow">04 / THE Lusso  EXPERIENCE</span>
+        <h2>A place for <em>every moment.</em></h2>
+        <p>Come for the coffee. Stay for the feeling.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card reveal" style="--d:0s"><img src="image/p8.jpg" alt="Friends at cafe"><div class="experience-caption"><span>01</span><h3>Good Company</h3><p>Catch up, connect and create memories.</p></div></article>
+        <article class="experience-card reveal" style="--d:.1s"><img src="image/p9.jpg" alt="Cafe workspace"><div class="experience-caption"><span>02</span><h3>Quiet Corners</h3><p>Your little escape for focus and creativity.</p></div></article>
+        <article class="experience-card reveal" style="--d:.2s"><img src="image/p10.jpg" alt="Cafe dining"><div class="experience-caption"><span>03</span><h3>Special Gatherings</h3><p>Celebrate the moments that matter.</p></div></article>
+      </div>
+    </section>
+    <section class="why-section">
+      <div class="section-heading reveal">
+        <span class="eyebrow">05 / WHY Lusso Cafe</span>
+        <h2>Little details. <em>Big difference.</em></h2>
+        <p>A thoughtful cafe experience, from the first hello to the last sip.</p>
+      </div>
+      <div class="why-grid">
+        <article class="why-card reveal" style="--d:0s"><span>01</span><h3>Freshly Prepared</h3><p>Every cup and plate is prepared with care, quality ingredients and attention to detail.</p></article>
+        <article class="why-card reveal" style="--d:.1s"><span>02</span><h3>Warm Hospitality</h3><p>Friendly service and a welcoming atmosphere make every visit feel special.</p></article>
+        <article class="why-card reveal" style="--d:.2s"><span>03</span><h3>Made for Moments</h3><p>From quick coffee breaks to long conversations, find your own little escape.</p></article>
+      </div>
+    </section>
+    <section class="offers-section" id="offers">
+      <div class="offers-copy reveal reveal-left">
+        <span class="eyebrow">06 / A LITTLE SOMETHING EXTRA</span>
+        <h2>Good days start<br>with <em>good coffee.</em></h2>
+        <p>Make your next cafe visit a moment to look forward to. Ask our team about seasonal specials and current in-cafe offers.</p>
+        <a href="#booking" class="btn btn-brown">Plan Your Visit <span>↗</span></a>
+      </div>
+      <div class="offers-image reveal reveal-right">
+        <img src="image/p11.jpg" alt="Coffee preparation">
+      </div>
+    </section>
+    <section class="offer-marquee" aria-label="Offers">
+      <div class="marquee"><div class="marquee-track" data-marquee><span>SEASONAL SPECIALS</span><i>✦</i><span>FRESH COFFEE DAILY</span><i>✦</i><span>ASK ABOUT TODAY'S OFFERS</span><i>✦</i><span>TREAT YOURSELF</span><i>✦</i></div></div>
+      <div class="marquee reverse"><div class="marquee-track" data-marquee><span>BRING YOUR FRIENDS</span><i>✦</i><span>SWEET MOMENTS</span><i>✦</i><span>RESERVE YOUR TABLE</span><i>✦</i><span>GOOD COFFEE · GOOD MOMENTS</span><i>✦</i></div></div>
+    </section>
+    <section class="section events-section" id="events">
+      <div class="section-heading reveal">
+        <span class="eyebrow">07 / MAKE IT A MOMENT</span>
+        <h2>Celebrate at <em>Lusso .</em></h2>
+        <p>Bring your people together over coffee, food and conversation.</p>
+      </div>
+      <div class="events-grid">
+        <article class="event-card reveal reveal-left"><img src="image/p12.jpg" alt="Celebration table"><div><span>GATHER TOGETHER</span><h3>Small Celebrations</h3><p>Plan a relaxed get-together for birthdays and special occasions.</p></div></article>
+        <article class="event-card reveal reveal-right"><img src="image/p13.jpg" alt="Cafe dining area"><div><span>MEET &amp; CONNECT</span><h3>Group Meetups</h3><p>Catch up with friends or enjoy a casual team meetup.</p></div></article>
+      </div>
+    </section>
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading reveal">
+        <span class="eyebrow">08 / THE GALLERY</span>
+        <h2>Little moments. <em>Lasting memories.</em></h2>
+      </div>
+      <div class="gallery-grid">
+        <img class="reveal" style="--d:0s" src="image/p14.jpg" alt="Cafe interior">
+        <img class="reveal" style="--d:.08s" src="image/p15.jpg" alt="Coffee shop">
+        <img class="reveal" style="--d:.16s" src="image/p16.jpg" alt="Coffee cup">
+        <img class="reveal" style="--d:.24s" src="image/p17.jpg" alt="Cafe table">
+      </div>
+    </section>
+    <section class="reviews-section" id="reviews">
+      <div class="section-heading reveal">
+        <span class="eyebrow">09 / KIND WORDS</span>
+        <h2>Moments worth <em>sharing.</em></h2>
+      </div>
+      <div class="review-grid">
+        <article class="review-card reveal" style="--d:0s"><div class="stars">★★★★★</div><p>"Beautiful ambience, amazing coffee and such a welcoming atmosphere. A lovely place to spend an afternoon."</p><strong>A Happy Guest</strong></article>
+        <article class="review-card reveal" style="--d:.1s"><div class="stars">★★★★★</div><p>"Loved the experience! The little details, presentation and service make this cafe special."</p><strong>A Coffee Lover</strong></article>
+        <article class="review-card reveal" style="--d:.2s"><div class="stars">★★★★★</div><p>"A perfect place to meet friends, relax and enjoy something delicious. Definitely coming back."</p><strong>A Regular Visitor</strong></article>
+      </div>
+    </section>
+    <section class="booking-section" id="booking">
+      <div class="booking-intro reveal reveal-left">
+        <span class="eyebrow">10 / SAVE YOURSELF A SEAT</span>
+        <h2>Your table<br><em>is waiting.</em></h2>
+        <p>Make time for a little something special. Send us your reservation request.</p>
+        <div class="booking-note">A GOOD TABLE. GOOD FOOD. GOOD COMPANY.</div>
+        <a class="call-direct" href="tel:+919913392008">Call us: +91 99133 92008 ↗</a>
+      </div>
+      <form class="booking-form reveal reveal-right" id="bookingForm">
+        <div class="form-grid">
+          <label>Your Name *<input type="text" id="guestName" placeholder="Enter your name" autocomplete="name" maxlength="80" required></label>
+          <label>Phone Number *<input type="tel" id="guestPhone" placeholder="Your phone number" autocomplete="tel" pattern="[0-9+() -]{10,16}" required></label>
+          <label>Date *<input type="date" id="guestDate" required></label>
+          <label>Time *<input type="time" id="guestTime" required></label>
+          <label class="full-field">Number of Guests *
+            <select id="guestCount" required>
+              <option value="">Select guests</option>
+              <option value="1">1 Person</option><option value="2">2 People</option><option value="3">3 People</option><option value="4">4 People</option><option value="5">5 People</option><option value="6">6 People</option><option value="7">7 People</option><option value="8">8 People</option><option value="9">9 People</option><option value="10">10 People</option>
+            </select>
+          </label>
+          <label class="full-field">Special Request (Optional)<textarea id="guestMessage" rows="3" maxlength="500" placeholder="Anything we should know?"></textarea></label>
+        </div>
+        <button type="submit" class="btn btn-brown booking-submit" id="bookingSubmit">Send Booking Request <span>↗</span></button>
+        <p class="booking-status" id="bookingStatus" aria-live="polite"></p>
+        <small>Your request will be saved in this browser only. Please call our team to confirm table availability.</small>
+      </form>
+    </section>
+    <section class="section faq-section" id="faq">
+      <div class="section-heading reveal">
+        <span class="eyebrow">ANSWERS AT A GLANCE</span>
+        <h2>Frequently <em>asked.</em></h2>
+        <p>A few helpful details before your visit.</p>
+      </div>
+      <div class="faq-list reveal">
+        <details><summary>How can I reserve a table?</summary><p>Complete the reservation form and submit your booking request. Please contact our team to confirm availability.</p></details>
+        <details><summary>Can I ask about menu items and prices?</summary><p>Yes. Explore the menu section or call our team for the latest menu information.</p></details>
+        <details><summary>Do you accept group bookings?</summary><p>For group visits and special gatherings, contact our team so we can help with arrangements.</p></details>
+        <details><summary>How do I contact Lusso Cafe?</summary><p>Call us at +91 99133 92008. We will be happy to help.</p></details>
+      </div>
+    </section>
+    <section class="visit-section">
+      <div class="visit-photo"></div>
+      <div class="visit-copy reveal reveal-right">
+        <span class="eyebrow">COME FIND YOUR Lusso </span>
+        <h2>We saved a seat<br><em>for you.</em></h2>
+        <p>Visit us for a beautiful coffee experience and moments worth remembering.</p>
+        <a href="#booking" class="btn btn-light">Plan Your Visit <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-topline">
+      <span>YOUR LITTLE ESCAPE IN EVERY CUP</span>
+      <span>GOOD COFFEE · GOOD COMPANY · GOOD MOMENTS</span>
+    </div>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo"><span class="logo-symbol"><img src="image/logo.svg" alt="Lusso Cafe logo"></span><span class="logo-text">Lusso <small>CAFE</small></span></a>
+        <p>A warm corner for beautifully brewed coffee, delicious little treats and conversations worth slowing down for.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
+        <a href="#story">Our Story</a><a href="#menu">Our Menu</a><a href="#craft">Our Craft</a><a href="#experiences">Experiences</a><a href="#gallery">Gallery</a>
+      </div>
+      <div class="footer-column">
+        <h3>DISCOVER</h3>
+        <a href="#offers">Special Offers</a><a href="#events">Events</a><a href="#reviews">Guest Reviews</a><a href="#faq">FAQs</a><a href="#booking">Reserve a Table</a>
+      </div>
+      <div class="footer-column footer-contact">
+        <h3>COME SAY HELLO</h3>
+        <p>Have a question or planning a visit? We'd love to hear from you.</p>
+        <a href="tel:+919913392008"><small>PHONE</small>+91 99133 92008 ↗</a>
+        <a href="#booking"><small>RESERVATIONS</small>Request a table ↗</a>
+        <div class="footer-hours"><small>OPENING HOURS</small><p>Contact us for today's timings.</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Lusso Cafe. All rights reserved.</span>
+      <span>MADE WITH <b>♥</b> FOR COFFEE LOVERS</span>
+      <a href="#home">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <div class="floating-tools">
+    <button class="scroll-circle" id="scrollCircle" aria-label="Scroll to bottom">
+      <svg viewBox="0 0 60 60" aria-hidden="true"><circle class="circle-track" cx="30" cy="30" r="25"></circle><circle class="circle-value" id="circleValue" cx="30" cy="30" r="25"></circle></svg>
+      <span id="scrollPercent">0%</span>
+    </button>
+    <button class="chat-launcher" id="chatLauncher"><span class="online-dot"></span> ✦ Ask Lusso </button>
+  </div>
+  <section class="chat-panel" id="chatPanel" aria-label="Ask Lusso  chatbot" aria-hidden="true">
+    <div class="chat-header">
+      <div><strong>✦ Ask Lusso </strong><small><span class="online-dot"></span> Here to help you</small></div>
+      <button type="button" id="chatClose" aria-label="Close chat">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-bubble bot-message">Hello! Welcome to Lusso Cafe. ☕ How can I help you today?</div>
+      <div class="quick-questions">
+        <button type="button" data-question="What is on your menu?">View menu</button>
+        <button type="button" data-question="How can I book a table?">Book a table</button>
+        <button type="button" data-question="What is your contact number?">Contact us</button>
+      </div>
+    </div>
+    <form class="chat-form" id="chatForm">
+      <input type="text" id="chatInput" placeholder="Ask me anything..." autocomplete="off" required>
+      <button type="submit" aria-label="Send message">➤</button>
+    </form>
+  </section>
+  <div id="successModal" role="dialog" aria-modal="true" aria-labelledby="gpTitle" aria-hidden="true">
+    <div class="gp-card" id="receipt">
+      <button type="button" class="gp-close no-print" id="successClose" aria-label="Close">×</button>
+      <div class="gp-tick"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M28 51 L43 66 L73 35"></path></svg></div>
+      <h2 id="gpTitle">Booking Requested</h2>
+      <p class="gp-sub">Your table request has been saved.</p>
+      <div class="gp-id">Ref <strong id="receiptBookingId">Lusso -000000</strong></div>
+      <div class="gp-summary">
+        <div><span>DATE</span><strong id="receiptDate">-</strong></div>
+        <div><span>TIME</span><strong id="receiptTime">-</strong></div>
+        <div><span>GUESTS</span><strong id="receiptGuests">-</strong></div>
+      </div>
+      <div class="gp-list">
+        <div class="gp-row"><span>Guest</span><b id="receiptName">-</b></div>
+        <div class="gp-row"><span>Phone</span><b id="receiptPhone">-</b></div>
+        <div class="gp-row"><span>Request</span><b id="receiptMessage">None</b></div>
+      </div>
+      <p class="gp-note">Saved in this browser only. Please call +91 99133 92008 to confirm availability.</p>
+      <div class="gp-actions no-print">
+        <button type="button" class="gp-done" id="doneBooking">Done</button>
+        <button type="button" class="gp-link" id="printReceipt">Save receipt</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
