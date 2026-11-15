@@ -116,6 +116,24 @@ Phone: [+91 99133 92008](tel:+919913392008)
 - [ ] Add Google Maps location
 - [ ] Add a dark mode
 
+--- 
+
+## 🔗 Live Preview
+
+<p align="center">
+  <a href="https://lusso-cafe.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Visit_Lusso_Cafe-Live_Demo-8B6F50?style=for-the-badge&logoColor=white" alt="Visit Lusso Cafe Live Website">
+  </a>
+</p>
+
+<p align="center">
+  **Experience Lusso Cafe — A Taste of Luxury**
+  <br>
+  Explore our elegant website, discover the menu, browse our gallery, and reserve your table.
+  <br><br>
+  <a href="https://lusso-cafe.vercel.app/">🌐 Open Live Website →</a>
+</p>
+
 ---
 
 ## 📄 License
